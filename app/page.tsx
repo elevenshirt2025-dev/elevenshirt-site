@@ -4,6 +4,7 @@ import EnvProbe from "./components/EnvProbe";
 
 
 
+
 export const metadata: Metadata = {
   title: "Mystery Box de Camisolas de Futebol Oficiais | ElevenShirt",
   description: "Descobre a mystery box de camisolas de futebol oficiais. Surpresa, autenticidade e paixão pelo futebol.",
