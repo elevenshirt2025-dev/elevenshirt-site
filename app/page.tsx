@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import HomePageContent from ".@/components/home-page-content"
+import HomePageContent from "@/components/home-page-content"
 import EnvProbe from "@/components/EnvProbe";   // <— use este
 
 
