@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import HomePageContent from "@/components/home-page-content"
-import EnvProbe from "@/components/EnvProbe";   // <— use este
+import EnvProbe from "./components/EnvProbe";
+
 
 
 export const metadata: Metadata = {
