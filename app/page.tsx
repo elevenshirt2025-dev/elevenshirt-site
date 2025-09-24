@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import HomePageContent from "@/components/home-page-content"
 import EnvProbe from "./components/EnvProbe";
-git add -A && git commit -m "Mover EnvProbe" && git push
 
 export const metadata: Metadata = {
   title: "Mystery Box de Camisolas de Futebol Oficiais | ElevenShirt",
