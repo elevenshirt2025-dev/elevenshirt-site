@@ -51,3 +51,5 @@ next-env.d.ts
 !convex/_generated/api.ts
 
 !convex/_generated/api.ts
+
+!convex/_generated/api.ts
