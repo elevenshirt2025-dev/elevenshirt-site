@@ -1,5 +1,5 @@
 import { preloadQuery } from "convex/nextjs";
-import { api } from "@/convex/_generated/api";
+import api from "@/convex/_generated/api";
 import BlogPageClient from "@/components/blog-page-client";
 import type { Metadata } from "next";
 
