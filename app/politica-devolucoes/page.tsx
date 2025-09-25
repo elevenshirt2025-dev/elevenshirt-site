@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import PoliticaDevolucoes from '@/components/politica-devolucoes-content';
+import PoliticaDevolucoes from '../../components/politica-devolucoes-content';
 
 export const metadata: Metadata = {
   title: 'Política de Devoluções | Eleven Shirt',

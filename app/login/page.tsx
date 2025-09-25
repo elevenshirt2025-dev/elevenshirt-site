@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import LoginPageContent from '@/components/login-page-content';
+import LoginPageContent from '../../components/login-page-content';
 
 export const metadata: Metadata = {
   title: 'Iniciar Sessão - Eleven Shirt',

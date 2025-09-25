@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import MysteryBoxesPageContent from '@/components/mystery-boxes-page-content';
+import MysteryBoxesPageContent from '../../components/mystery-boxes-page-content';
 
 export const metadata: Metadata = {
   title: 'Mystery Boxes de Camisolas de Futebol | ElevenShirt',

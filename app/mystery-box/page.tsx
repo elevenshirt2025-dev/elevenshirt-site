@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import MysteryBoxPageContent from '@/components/mystery-box-page-content';
+import MysteryBoxPageContent from '../../components/mystery-box-page-content';
 
 export const metadata: Metadata = {
   title: 'Mystery Box | ElevenShirt',
