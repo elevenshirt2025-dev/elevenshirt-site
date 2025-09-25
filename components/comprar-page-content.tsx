@@ -9,10 +9,10 @@ import { Textarea } from "./ui/textarea"
 import { Input } from "./ui/input"
 import { Label } from "./ui/label"
 import { CheckCircle, Gift, ArrowLeft, Shield, Truck, Star, CreditCard, Smartphone, Building2 } from "lucide-react"
-import { useToast } from "@/hooks/use-toast"
+import { useToast } from "../hooks/use-toast"
 import { useRouter } from "next/navigation"
 import { useMutation, useQuery } from "convex/react"
-import { api } from "@/convex/_generated/api"
+import { api } from "../convex/_generated/api"
 
 export default function ComprarPageContent() {
   const [excludedClubs, setExcludedClubs] = useState("")

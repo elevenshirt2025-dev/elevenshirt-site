@@ -6,12 +6,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/
 import { Input } from "./ui/input"
 import { Label } from "./ui/label"
 import { Separator } from "./ui/separator"
-import { useToast } from "@/hooks/use-toast"
+import { useToast } from "../hooks/use-toast"
 import { useRouter } from "next/navigation"
 import { User, Mail, Lock, ArrowLeft, Gift } from "lucide-react"
 import { useAuthActions } from "@convex-dev/auth/react"
 import { useQuery } from "convex/react"
-import { api } from "@/convex/_generated/api"
+import { api } from "../convex/_generated/api"
 
 export default function LoginPageContent() {
   const [email, setEmail] = useState("")
