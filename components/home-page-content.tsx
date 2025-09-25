@@ -1,4 +1,4 @@
-
+﻿
 
 
 
@@ -48,14 +48,14 @@ export default function HomePageContent() {
     try {
       await signOut()
       toast({
-        title: "Sessão terminada",
-        description: "Até breve! Volta sempre que quiseres.",
+        title: "SessÃ£o terminada",
+        description: "AtÃ© breve! Volta sempre que quiseres.",
       })
     } catch (error) {
       console.error("Error signing out:", error)
       toast({
         title: "Erro",
-        description: "Ocorreu um erro ao terminar a sessão.",
+        description: "Ocorreu um erro ao terminar a sessÃ£o.",
         variant: "destructive",
       })
     }
@@ -66,7 +66,7 @@ export default function HomePageContent() {
     
     if (!email) {
       toast({
-        title: "Email necessário",
+        title: "Email necessÃ¡rio",
         description: "Por favor, insere o teu email para entrares na lista VIP.",
         variant: "destructive",
       })
@@ -75,8 +75,8 @@ export default function HomePageContent() {
 
     if (!email.includes("@")) {
       toast({
-        title: "Email inválido",
-        description: "Por favor, insere um email válido.",
+        title: "Email invÃ¡lido",
+        description: "Por favor, insere um email vÃ¡lido.",
         variant: "destructive",
       })
       return
@@ -87,8 +87,8 @@ export default function HomePageContent() {
     // Simulate API call
     setTimeout(() => {
       toast({
-        title: "Bem-vindo à Lista VIP! 🎉",
-        description: "Receberás em breve acesso exclusivo às nossas Mystery Boxes.",
+        title: "Bem-vindo Ã  Lista VIP! ðŸŽ‰",
+        description: "ReceberÃ¡s em breve acesso exclusivo Ã s nossas Mystery Boxes.",
       })
       setEmail("")
       setIsSubmitting(false)
@@ -111,8 +111,8 @@ export default function HomePageContent() {
     // Check if user is authenticated
     if (user === null) {
       toast({
-        title: "Iniciar Sessão Necessário",
-        description: "Para adicionar itens ao carrinho, precisas de iniciar sessão ou criar uma conta.",
+        title: "Iniciar SessÃ£o NecessÃ¡rio",
+        description: "Para adicionar itens ao carrinho, precisas de iniciar sessÃ£o ou criar uma conta.",
         variant: "destructive",
       })
       router.push("/login")
@@ -123,7 +123,7 @@ export default function HomePageContent() {
     if (user === undefined) {
       toast({
         title: "A carregar...",
-        description: "Por favor aguarda enquanto verificamos a tua sessão.",
+        description: "Por favor aguarda enquanto verificamos a tua sessÃ£o.",
       })
       return
     }
@@ -186,7 +186,7 @@ export default function HomePageContent() {
       setRetroExcludedClubs('')
       
       toast({
-        title: "Adicionado ao Carrinho! 🛒",
+        title: "Adicionado ao Carrinho! ðŸ›’",
         description: "Mystery Box Atual e Retro foram adicionadas ao teu carrinho.",
       })
     } else {
@@ -211,7 +211,7 @@ export default function HomePageContent() {
       setSizeDialogOpen(false)
       setSelectedBoxType(null)
       toast({
-        title: "Adicionado ao Carrinho! 🛒",
+        title: "Adicionado ao Carrinho! ðŸ›’",
         description: `${item.name} (Tamanho ${size}) foi adicionada ao teu carrinho.`,
       })
     }
@@ -226,28 +226,28 @@ export default function HomePageContent() {
             PRODUTOS 100% ORIGINAIS.
           </span>
           <span className="text-lg font-bold mx-16 uppercase">
-            NUNCA RÉPLICAS.
+            NUNCA RÃ‰PLICAS.
           </span>
           <span className="text-lg font-bold mx-16 uppercase">
-            ENVIO GRÁTIS.
-          </span>
-          <span className="text-lg font-bold mx-16 uppercase">
-            PRODUTOS 100% ORIGINAIS.
-          </span>
-          <span className="text-lg font-bold mx-16 uppercase">
-            NUNCA RÉPLICAS.
-          </span>
-          <span className="text-lg font-bold mx-16 uppercase">
-            ENVIO GRÁTIS.
+            ENVIO GRÃTIS.
           </span>
           <span className="text-lg font-bold mx-16 uppercase">
             PRODUTOS 100% ORIGINAIS.
           </span>
           <span className="text-lg font-bold mx-16 uppercase">
-            NUNCA RÉPLICAS.
+            NUNCA RÃ‰PLICAS.
           </span>
           <span className="text-lg font-bold mx-16 uppercase">
-            ENVIO GRÁTIS.
+            ENVIO GRÃTIS.
+          </span>
+          <span className="text-lg font-bold mx-16 uppercase">
+            PRODUTOS 100% ORIGINAIS.
+          </span>
+          <span className="text-lg font-bold mx-16 uppercase">
+            NUNCA RÃ‰PLICAS.
+          </span>
+          <span className="text-lg font-bold mx-16 uppercase">
+            ENVIO GRÃTIS.
           </span>
         </div>
       </div>
@@ -258,7 +258,7 @@ export default function HomePageContent() {
           <div className="flex items-center space-x-2">
             <img 
               src="https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/uddcboaoghiy5jvcgw27q2gs/q9slqqtxiper1cgp3ka5cacr/7ZqSxbGbgCd0hQaaixpdy/captura-de-ecra-2025-08-26-120014.png"
-              alt="Eleven Shirt – Mystery Box de Camisolas de Futebol Originais"
+              alt="Eleven Shirt â€“ Mystery Box de Camisolas de Futebol Originais"
               className="h-32 w-auto"
             />
           </div>
@@ -293,20 +293,20 @@ export default function HomePageContent() {
                 className="text-white hover:text-gold transition-colors"
               >
                 <User className="h-5 w-5 mr-2" />
-                Iniciar Sessão
+                Iniciar SessÃ£o
               </Button>
             ) : (
               // Authenticated - show user info and logout
               <div className="flex items-center gap-2">
                 <span className="text-gold text-sm hidden sm:block">
-                  Olá, {user.name || user.email?.split('@')[0]}
+                  OlÃ¡, {user.name || user.email?.split('@')[0]}
                 </span>
                 <Button 
                   onClick={handleSignOut}
                   variant="ghost"
                   size="sm"
                   className="text-white hover:text-gold transition-colors"
-                  title="Terminar Sessão"
+                  title="Terminar SessÃ£o"
                 >
                   <LogOut className="h-4 w-4" />
                 </Button>
@@ -344,15 +344,15 @@ export default function HomePageContent() {
       <section className="py-20 px-4">
         <div className="container mx-auto text-center max-w-4xl">
           <Badge className="mb-6 bg-gold/10 text-gold border-gold/30 shadow-lg">
-            🇵🇹 Marca Portuguesa de Mystery Boxes
+            ðŸ‡µðŸ‡¹ Marca Portuguesa de Mystery Boxes
           </Badge>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
              Mystery Box de Camisolas de Futebol <span className="text-gold bg-gradient-to-r from-gold to-yellow-300 bg-clip-text text-transparent">100% Originais</span></h1>
           <p className="text-xl text-silver mb-2 max-w-2xl mx-auto leading-relaxed font-semibold">
-            ⚽ O Futebol Cabe Numa Box.
+            âš½ O Futebol Cabe Numa Box.
           </p>
           <p className="text-lg text-silver mb-8 max-w-2xl mx-auto leading-relaxed">
-            Camisolas oficiais, licenciadas e autênticas numa experiência única. Compra uma Mystery Box e recebe uma camisola surpresa — sempre original, nunca réplica.
+            Camisolas oficiais, licenciadas e autÃªnticas numa experiÃªncia Ãºnica. Compra uma Mystery Box e recebe uma camisola surpresa â€” sempre original, nunca rÃ©plica.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
@@ -373,19 +373,19 @@ export default function HomePageContent() {
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
             <img 
               src="https://assets.macaly-user-data.dev/cdn-cgi/image/fit=scale-down,width=2000,height=2000,format=webp,quality=90/uddcboaoghiy5jvcgw27q2gs/q9slqqtxiper1cgp3ka5cacr/offhwMTMTQvJCAPZiWega/omar-ramadan-m-e8-ij-9-r48-oo-unsplash.jpg" 
-              alt="camisola oficial autêntica ElevenShirt - Manchester United, Barcelona, Real Madrid"
+              alt="camisola oficial autÃªntica ElevenShirt - Manchester United, Barcelona, Real Madrid"
               className="w-full h-96 object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
             <div className="absolute bottom-6 left-6 text-white">
-              <p className="text-lg font-semibold text-gold">👉 Camisolas de Clubes Oficiais</p>
+              <p className="text-lg font-semibold text-gold">ðŸ‘‰ Camisolas de Clubes Oficiais</p>
               <p className="text-sm opacity-90">Manchester United, Manchester City, Barcelona e muito mais</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Sobre Nós Section */}
+      {/* Sobre NÃ³s Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
@@ -393,63 +393,63 @@ export default function HomePageContent() {
               Somos a melhor escolha
             </h2>
             <h3 className="text-4xl font-bold text-white mb-6">
-              Sobre Nós
+              Sobre NÃ³s
             </h3>
           </div>
           
           <div className="bg-gradient-to-br from-black/80 to-gray-900/80 backdrop-blur-sm border border-gold/20 rounded-2xl p-8 md:p-12 shadow-2xl">
             <div className="prose prose-lg prose-invert max-w-none">
               <p className="text-lg text-silver leading-relaxed mb-6">
-                A Eleven Shirt nasceu de uma paixão simples: o futebol. ⚽
+                A Eleven Shirt nasceu de uma paixÃ£o simples: o futebol. âš½
               </p>
               
               <p className="text-lg text-silver leading-relaxed mb-6">
-                Sempre acreditámos que uma camisola não é apenas tecido com cores e patrocinadores — é memória, emoção e identidade. É aquele momento em que te lembras da primeira vez que foste ao estádio, da celebração de um golo inesquecível ou do jogador que fez sonhar gerações.
+                Sempre acreditÃ¡mos que uma camisola nÃ£o Ã© apenas tecido com cores e patrocinadores â€” Ã© memÃ³ria, emoÃ§Ã£o e identidade. Ã‰ aquele momento em que te lembras da primeira vez que foste ao estÃ¡dio, da celebraÃ§Ã£o de um golo inesquecÃ­vel ou do jogador que fez sonhar geraÃ§Ãµes.
               </p>
 
               <p className="text-lg text-silver leading-relaxed mb-6">
                 Foi com essa ideia que surgiu a pergunta:<br />
-                <span className="text-gold font-semibold">👉 "E se o futebol coubesse dentro de uma box?"</span>
+                <span className="text-gold font-semibold">ðŸ‘‰ "E se o futebol coubesse dentro de uma box?"</span>
               </p>
 
               <p className="text-lg text-silver leading-relaxed mb-6">
-                Daqui nasceu a Mystery Box Eleven Shirt — uma experiência única que junta o elemento surpresa à autenticidade. Cada box traz uma camisola 100% original, licenciada e oficial, escolhida entre clubes e seleções de todo o mundo. Nunca réplicas, nunca falsificações — apenas paixão verdadeira.
+                Daqui nasceu a Mystery Box Eleven Shirt â€” uma experiÃªncia Ãºnica que junta o elemento surpresa Ã  autenticidade. Cada box traz uma camisola 100% original, licenciada e oficial, escolhida entre clubes e seleÃ§Ãµes de todo o mundo. Nunca rÃ©plicas, nunca falsificaÃ§Ãµes â€” apenas paixÃ£o verdadeira.
               </p>
 
               <p className="text-lg text-silver leading-relaxed mb-6">
-                Mais do que vender camisolas, queremos criar momentos de emoção. A cada box aberta, há um coração a bater mais rápido, uma expectativa a crescer e um sorriso que se desenha no rosto.
+                Mais do que vender camisolas, queremos criar momentos de emoÃ§Ã£o. A cada box aberta, hÃ¡ um coraÃ§Ã£o a bater mais rÃ¡pido, uma expectativa a crescer e um sorriso que se desenha no rosto.
               </p>
 
               <p className="text-lg text-silver leading-relaxed mb-8">
-                A Eleven Shirt é uma marca portuguesa 🇵🇹, criada para os adeptos e colecionadores que vivem o futebol em cada detalhe. O nosso compromisso é claro:
+                A Eleven Shirt Ã© uma marca portuguesa ðŸ‡µðŸ‡¹, criada para os adeptos e colecionadores que vivem o futebol em cada detalhe. O nosso compromisso Ã© claro:
               </p>
 
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="text-center p-6 bg-gradient-to-b from-gold/10 to-transparent rounded-xl border border-gold/20">
                   <Shield className="h-8 w-8 text-gold mx-auto mb-3" />
                   <h3 className="text-gold font-semibold mb-2">Autenticidade</h3>
-                  <p className="text-silver text-sm">só trabalhamos com produtos oficiais.</p>
+                  <p className="text-silver text-sm">sÃ³ trabalhamos com produtos oficiais.</p>
                 </div>
                 
                 <div className="text-center p-6 bg-gradient-to-b from-gold/10 to-transparent rounded-xl border border-gold/20">
                   <Gift className="h-8 w-8 text-gold mx-auto mb-3" />
-                  <h3 className="text-gold font-semibold mb-2">Experiência</h3>
-                  <p className="text-silver text-sm">cada box é surpresa, cada box é diferente.</p>
+                  <h3 className="text-gold font-semibold mb-2">ExperiÃªncia</h3>
+                  <p className="text-silver text-sm">cada box Ã© surpresa, cada box Ã© diferente.</p>
                 </div>
                 
                 <div className="text-center p-6 bg-gradient-to-b from-gold/10 to-transparent rounded-xl border border-gold/20">
                   <Star className="h-8 w-8 text-gold mx-auto mb-3" />
                   <h3 className="text-gold font-semibold mb-2">Comunidade</h3>
-                  <p className="text-silver text-sm">queremos criar uma família de fãs e colecionadores que partilham esta paixão.</p>
+                  <p className="text-silver text-sm">queremos criar uma famÃ­lia de fÃ£s e colecionadores que partilham esta paixÃ£o.</p>
                 </div>
               </div>
 
               <div className="text-center">
                 <p className="text-lg text-silver leading-relaxed mb-4">
-                  Este é apenas o início. O jogo está em aberto, e tu podes fazer parte dele.
+                  Este Ã© apenas o inÃ­cio. O jogo estÃ¡ em aberto, e tu podes fazer parte dele.
                 </p>
                 <p className="text-xl font-bold text-gold">
-                  👉 O Futebol Cabe Numa Box.
+                  ðŸ‘‰ O Futebol Cabe Numa Box.
                 </p>
               </div>
             </div>
@@ -465,7 +465,7 @@ export default function HomePageContent() {
               Garantia de Autenticidade Eleven Shirt
             </h2>
             <p className="text-xl text-silver">
-              A tua confiança é a nossa prioridade.
+              A tua confianÃ§a Ã© a nossa prioridade.
             </p>
           </div>
 
@@ -473,9 +473,9 @@ export default function HomePageContent() {
             <Card className="text-center border border-gold/20 shadow-2xl bg-gradient-to-b from-black/80 to-gray-900/80 backdrop-blur-sm">
               <CardContent className="pt-8">
                 <Shield className="h-12 w-12 text-gold mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2 text-white">100% Autênticas</h3>
+                <h3 className="text-xl font-semibold mb-2 text-white">100% AutÃªnticas</h3>
                 <p className="text-silver">
-                  todas as camisolas são originais e licenciadas pelos clubes oficiais.
+                  todas as camisolas sÃ£o originais e licenciadas pelos clubes oficiais.
                 </p>
               </CardContent>
             </Card>
@@ -483,9 +483,9 @@ export default function HomePageContent() {
             <Card className="text-center border border-gold/20 shadow-2xl bg-gradient-to-b from-black/80 to-gray-900/80 backdrop-blur-sm">
               <CardContent className="pt-8">
                 <Truck className="h-12 w-12 text-gold mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2 text-white">Envio Rápido</h3>
+                <h3 className="text-xl font-semibold mb-2 text-white">Envio RÃ¡pido</h3>
                 <p className="text-silver">
-                  entrega gratuita em Portugal e Europa em 3-5 dias úteis.
+                  entrega gratuita em Portugal e Europa em 3-5 dias Ãºteis.
                 </p>
               </CardContent>
             </Card>
@@ -493,9 +493,9 @@ export default function HomePageContent() {
             <Card className="text-center border border-gold/20 shadow-2xl bg-gradient-to-b from-black/80 to-gray-900/80 backdrop-blur-sm">
               <CardContent className="pt-8">
                 <Star className="h-12 w-12 text-gold mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2 text-white">Satisfação Garantida</h3>
+                <h3 className="text-xl font-semibold mb-2 text-white">SatisfaÃ§Ã£o Garantida</h3>
                 <p className="text-silver">
-                  certificado de autenticidade incluído em cada camisola.
+                  certificado de autenticidade incluÃ­do em cada camisola.
                 </p>
               </CardContent>
             </Card>
@@ -508,10 +508,10 @@ export default function HomePageContent() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
-              Camisolas Oficiais Autênticas – Como Funciona a Mystery Box
+              Camisolas Oficiais AutÃªnticas â€“ Como Funciona a Mystery Box
             </h2>
             <p className="text-xl text-slate-600">
-              Simples, rápido e sempre uma surpresa autêntica
+              Simples, rÃ¡pido e sempre uma surpresa autÃªntica
             </p>
           </div>
 
@@ -528,10 +528,10 @@ export default function HomePageContent() {
               </div>
               <h3 className="text-2xl font-bold text-slate-900">Escolhe a Tua Mystery Box</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Seleciona entre a <strong>Mystery Box Atual</strong> (€49.99) com camisolas das últimas temporadas ou a <strong>Mystery Box Retro</strong> (€59.99) com peças vintage dos anos 80, 90 e 2000.
+                Seleciona entre a <strong>Mystery Box Atual</strong> (â‚¬49.99) com camisolas das Ãºltimas temporadas ou a <strong>Mystery Box Retro</strong> (â‚¬59.99) com peÃ§as vintage dos anos 80, 90 e 2000.
               </p>
               <div className="bg-white p-4 rounded-xl shadow-lg border border-gold/20">
-                <p className="text-sm text-slate-500 font-medium">✓ Todas 100% originais e licenciadas</p>
+                <p className="text-sm text-slate-500 font-medium">âœ“ Todas 100% originais e licenciadas</p>
               </div>
             </div>
 
@@ -547,10 +547,10 @@ export default function HomePageContent() {
               </div>
               <h3 className="text-2xl font-bold text-slate-900">Recebe em Casa</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                A tua Mystery Box chega à tua porta em <strong>3-5 dias úteis</strong> com envio gratuito para Portugal e Europa. Embalagem cuidada e discreta.
+                A tua Mystery Box chega Ã  tua porta em <strong>3-5 dias Ãºteis</strong> com envio gratuito para Portugal e Europa. Embalagem cuidada e discreta.
               </p>
               <div className="bg-white p-4 rounded-xl shadow-lg border border-gold/20">
-                <p className="text-sm text-slate-500 font-medium">🚚 Envio gratuito e rápido</p>
+                <p className="text-sm text-slate-500 font-medium">ðŸšš Envio gratuito e rÃ¡pido</p>
               </div>
             </div>
 
@@ -566,10 +566,10 @@ export default function HomePageContent() {
               </div>
               <h3 className="text-2xl font-bold text-slate-900">Desfruta da Surpresa</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Abre a tua box e descobre a <strong>camisola oficial surpresa</strong>! Cada camisola vem com certificado de autenticidade e é uma peça única para a tua coleção.
+                Abre a tua box e descobre a <strong>camisola oficial surpresa</strong>! Cada camisola vem com certificado de autenticidade e Ã© uma peÃ§a Ãºnica para a tua coleÃ§Ã£o.
               </p>
               <div className="bg-white p-4 rounded-xl shadow-lg border border-gold/20">
-                <p className="text-sm text-slate-500 font-medium">🏆 Certificado de autenticidade incluído</p>
+                <p className="text-sm text-slate-500 font-medium">ðŸ† Certificado de autenticidade incluÃ­do</p>
               </div>
             </div>
           </div>
@@ -581,7 +581,7 @@ export default function HomePageContent() {
                 Pronto para a Tua Primeira Mystery Box?
               </h3>
               <p className="text-lg text-slate-600 mb-6">
-                Junta-te a milhares de fãs que já descobriram camisolas incríveis
+                Junta-te a milhares de fÃ£s que jÃ¡ descobriram camisolas incrÃ­veis
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
@@ -613,7 +613,7 @@ export default function HomePageContent() {
       <section className="py-20 px-4 bg-black" data-section="vip">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-4xl font-bold text-gold mb-4">
-            Junta-te à Comunidade Eleven Shirt
+            Junta-te Ã  Comunidade Eleven Shirt
           </h2>
           <p className="text-xl text-gray-300 mb-8">
             Recebe acesso exclusivo a Mystery Boxes limitadas e ofertas especiais.
@@ -659,7 +659,7 @@ export default function HomePageContent() {
                 />
               </div>
               <p className="text-slate-400">
-                Eleven Shirt é uma marca portuguesa especializada em Mystery Boxes de camisolas de futebol originais e licenciadas, com edições atuais e retro.
+                Eleven Shirt Ã© uma marca portuguesa especializada em Mystery Boxes de camisolas de futebol originais e licenciadas, com ediÃ§Ãµes atuais e retro.
               </p>
             </div>
             
@@ -682,26 +682,26 @@ export default function HomePageContent() {
                 <li><button onClick={() => {
                   toast({
                     title: "Contacto",
-                    description: "📧 elevenshirt2025@gmail.com",
+                    description: "ðŸ“§ elevenshirt2025@gmail.com",
                   })
-                }} className="hover:text-gold transition-colors">📧 elevenshirt2025@gmail.com</button></li>
+                }} className="hover:text-gold transition-colors">ðŸ“§ elevenshirt2025@gmail.com</button></li>
                 <li><button onClick={() => {
                   toast({
                     title: "Contacto",
-                    description: "📧 elevenshirt2025@gmail.com",
+                    description: "ðŸ“§ elevenshirt2025@gmail.com",
                   })
-                }} className="hover:text-gold transition-colors">📧 elevenshirt2025@gmail.com</button></li>
+                }} className="hover:text-gold transition-colors">ðŸ“§ elevenshirt2025@gmail.com</button></li>
                 <li><button onClick={() => {
                   toast({
                     title: "Envios",
-                    description: "Envio gratuito em Portugal e Europa em 3-5 dias úteis.",
+                    description: "Envio gratuito em Portugal e Europa em 3-5 dias Ãºteis.",
                   })
-                }} className="hover:text-gold transition-colors">Envio gratuito em Portugal e Europa em 3-5 dias úteis</button></li>
+                }} className="hover:text-gold transition-colors">Envio gratuito em Portugal e Europa em 3-5 dias Ãºteis</button></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Política de Devoluções</h4>
+              <h4 className="font-semibold mb-4">PolÃ­tica de DevoluÃ§Ãµes</h4>
               <ul className="space-y-2 text-slate-400">
                 <li>
                   <Button 
@@ -709,7 +709,7 @@ export default function HomePageContent() {
                     variant="ghost"
                     className="text-slate-400 hover:text-gold transition-colors p-0 h-auto font-normal text-left justify-start"
                   >
-                    Ver Política de Devoluções
+                    Ver PolÃ­tica de DevoluÃ§Ãµes
                   </Button>
                 </li>
               </ul>
@@ -794,7 +794,7 @@ export default function HomePageContent() {
           <DialogHeader>
             <DialogTitle>Excluir Clubes das Tuas Mystery Boxes</DialogTitle>
             <DialogDescription>
-              Especifica até 3 clubes que não queres que calhem em cada Mystery Box. Separa os clubes por vírgulas.
+              Especifica atÃ© 3 clubes que nÃ£o queres que calhem em cada Mystery Box. Separa os clubes por vÃ­rgulas.
             </DialogDescription>
           </DialogHeader>
           <div className="space-y-6 py-4">
@@ -830,7 +830,7 @@ export default function HomePageContent() {
                 }}
                 className="flex-1 bg-gold hover:bg-gold/90 text-black font-semibold"
               >
-                Continuar para Seleção de Tamanho
+                Continuar para SeleÃ§Ã£o de Tamanho
               </Button>
             </div>
           </div>
@@ -839,6 +839,7 @@ export default function HomePageContent() {
     </div>
   )
 }
+
 
 
 
