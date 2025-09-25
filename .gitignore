@@ -47,3 +47,5 @@ next-env.d.ts
 .npm
 .npmrc
 .config
+
+!convex/_generated/api.ts
