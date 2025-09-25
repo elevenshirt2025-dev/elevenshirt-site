@@ -36,11 +36,14 @@
         "name": "next"
       }
     ],
-    "paths": {
-  "@/*": ["app/*"]
-}
 
+    // Alias @ para mapear para a pasta app/*
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["app/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
+
