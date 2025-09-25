@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import FaqPageContent from '@/components/faq-page-content';
+import FaqPageContent from '../../components/faq-page-content';
 
 export const metadata: Metadata = {
   title: 'FAQ - Perguntas Frequentes | Eleven Shirt',

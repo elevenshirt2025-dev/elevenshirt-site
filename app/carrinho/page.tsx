@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import CarrinhoPageContent from '../components/carrinho-page-content'
+import CarrinhoPageContent from '../../components/carrinho-page-content'
 
 export const metadata: Metadata = {
   title: 'Carrinho de Compras - Eleven Shirt',

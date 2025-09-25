@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import AdminPageContent from "../components/admin-page-content";
+import AdminPageContent from "../../components/admin-page-content";
 
 export const metadata: Metadata = {
   title: "Admin Dashboard - Eleven Shirt Blog",

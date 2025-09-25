@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import ComprarRetroPageContent from "../components/comprar-retro-page-content";
+import ComprarRetroPageContent from "../../components/comprar-retro-page-content";
 
 export const metadata: Metadata = {
   title: 'Comprar Mystery Box de Camisolas de Futebol Retro | ElevenShirt',
