@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/
 import { Badge } from "./ui/badge"
 import { Textarea } from "./ui/textarea"
 import { Input } from "./ui/input"
-import { Label } from "@/components/ui/label"
+import { Label } from "./ui/label"
 import { CheckCircle, Gift, ArrowLeft, Shield, Truck, Star, CreditCard, Smartphone, Building2 } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 import { useRouter } from "next/navigation"

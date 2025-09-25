@@ -14,11 +14,11 @@
 "use client"
 
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
+import { Button } from "./ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
+import { Badge } from "./ui/badge"
+import { Input } from "./ui/input"
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "./ui/dialog"
 import { CheckCircle, Star, Shield, Truck, Gift, ShoppingCart, Instagram, Youtube, User, LogOut } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 import { useRouter } from "next/navigation"
@@ -26,7 +26,7 @@ import { useCart } from "@/contexts/cart-context"
 import { useQuery } from "convex/react"
 import { useAuthActions } from "@convex-dev/auth/react"
 import { api } from "@/convex/_generated/api"
-import { Label } from "@/components/ui/label"
+import { Label } from "./ui/label"
 
 export default function HomePageContent() {
   const [email, setEmail] = useState("")
