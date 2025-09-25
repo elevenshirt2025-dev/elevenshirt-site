@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import CarrinhoPageContent from '@/components/carrinho-page-content'
 
 export const metadata: Metadata = {
