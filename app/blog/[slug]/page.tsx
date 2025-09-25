@@ -1,6 +1,6 @@
 import { preloadQuery } from "convex/nextjs";
-import { api } from "@/convex/_generated/api";
-import ArticlePageClient from "@/components/article-page-client";
+import { api } from "../../../convex/_generated/api";
+import ArticlePageClient from "../../../components/article-page-client";
 import type { Metadata } from 'next';
 
 interface Props {

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import ComprarRetroPageContent from "../components/comprar-retro-page-content";
 
 export const metadata: Metadata = {
