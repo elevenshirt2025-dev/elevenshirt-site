@@ -22,7 +22,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { CheckCircle, Star, Shield, Truck, Gift, ShoppingCart, Instagram, Youtube, User, LogOut } from "lucide-react"
 import { useToast } from "../hooks/use-toast"
 import { useRouter } from "next/navigation"
-import { useCart } from "@/contexts/cart-context"
+import { useCart } from "../contexts/cart-context"
 import { useQuery } from "convex/react"
 import { useAuthActions } from "@convex-dev/auth/react"
 import { api } from "../convex/_generated/api"
@@ -839,6 +839,8 @@ export default function HomePageContent() {
     </div>
   )
 }
+
+
 
 
 
