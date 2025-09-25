@@ -2,7 +2,7 @@ import "./globals.css"
 
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from "@/components/ui/sonner"
 import { ConvexClientProvider } from "@/components/convex-client-provider"
 import { CartProvider } from "@/contexts/cart-context"
 

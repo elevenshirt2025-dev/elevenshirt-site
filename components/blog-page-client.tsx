@@ -95,3 +95,7 @@ export default function BlogPageClient(props: {
     </div>
   );
 }
+// @ts-nocheck
+export default function BlogPageClient() {
+  return <div>BlogPageClient (stub)</div>;
+}

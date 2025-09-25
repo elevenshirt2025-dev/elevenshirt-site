@@ -422,4 +422,6 @@ export default function AdminPageContent() {
       </main>
     </div>
   );
+}export default function BlogPageClient() {
+  return <div>BlogPageClient (stub)</div>
 }
