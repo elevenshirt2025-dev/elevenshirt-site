@@ -1,1 +1,3 @@
-﻿export default function ArticlePageClient(){ return <div>ArticlePageClient (stub)</div>; }
+export default function ArticlePageClient() {
+  return <div>ArticlePageClient (stub)</div>;
+}
